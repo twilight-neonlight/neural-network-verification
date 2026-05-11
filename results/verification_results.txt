@@ -1,1 +1,12 @@
-Verification results placeholder.
+digit=0  epsilon=0.01
+robust=True  total_time=0.44s
+
+vs class 1: unsat  (0.026s)
+vs class 2: unsat  (0.065s)
+vs class 3: unsat  (0.025s)
+vs class 4: unsat  (0.016s)
+vs class 5: unsat  (0.054s)
+vs class 6: unsat  (0.026s)
+vs class 7: unsat  (0.016s)
+vs class 8: unsat  (0.016s)
+vs class 9: unsat  (0.015s)
