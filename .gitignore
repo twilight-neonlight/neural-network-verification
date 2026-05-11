@@ -23,3 +23,5 @@ Thumbs.db
 
 # Jupyter temp files
 .ipynb_checkpoints/
+
+.claude

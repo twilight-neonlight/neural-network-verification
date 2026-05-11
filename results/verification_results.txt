@@ -1,12 +1,72 @@
 digit=0  epsilon=0.01
-robust=True  total_time=0.44s
+robust=True  total_time=0.39s
+  vs class 1: unsat  (0.020s)
+  vs class 2: unsat  (0.053s)
+  vs class 3: unsat  (0.026s)
+  vs class 4: unsat  (0.015s)
+  vs class 5: unsat  (0.038s)
+  vs class 6: unsat  (0.024s)
+  vs class 7: unsat  (0.015s)
+  vs class 8: unsat  (0.015s)
+  vs class 9: unsat  (0.015s)
 
-vs class 1: unsat  (0.026s)
-vs class 2: unsat  (0.065s)
-vs class 3: unsat  (0.025s)
-vs class 4: unsat  (0.016s)
-vs class 5: unsat  (0.054s)
-vs class 6: unsat  (0.026s)
-vs class 7: unsat  (0.016s)
-vs class 8: unsat  (0.016s)
-vs class 9: unsat  (0.015s)
+digit=0  epsilon=0.05
+robust=False  total_time=45.85s
+  vs class 1: unsat  (0.026s)
+  vs class 2: sat  (0.063s)
+  vs class 3: unsat  (0.037s)
+  vs class 4: unsat  (0.037s)
+  vs class 5: unsat  (45.334s)
+  vs class 6: unsat  (0.028s)
+  vs class 7: unsat  (0.038s)
+  vs class 8: unsat  (0.039s)
+  vs class 9: unsat  (0.038s)
+
+digit=1  epsilon=0.01
+robust=True  total_time=0.53s
+  vs class 0: unsat  (0.024s)
+  vs class 2: unsat  (0.028s)
+  vs class 3: unsat  (0.038s)
+  vs class 4: unsat  (0.038s)
+  vs class 5: unsat  (0.038s)
+  vs class 6: unsat  (0.038s)
+  vs class 7: unsat  (0.038s)
+  vs class 8: unsat  (0.037s)
+  vs class 9: unsat  (0.038s)
+
+digit=1  epsilon=0.05
+robust=False  total_time=32.45s
+  vs class 0: unsat  (3.859s)
+  vs class 2: sat  (0.081s)
+  vs class 3: sat  (0.081s)
+  vs class 4: unsat  (1.195s)
+  vs class 5: unsat  (6.308s)
+  vs class 6: unsat  (4.663s)
+  vs class 7: unsat  (11.817s)
+  vs class 8: sat  (0.112s)
+  vs class 9: unsat  (4.116s)
+
+digit=2  epsilon=0.01
+robust=True  total_time=0.34s
+  vs class 0: unsat  (0.034s)
+  vs class 1: unsat  (0.025s)
+  vs class 3: unsat  (0.016s)
+  vs class 4: unsat  (0.016s)
+  vs class 5: unsat  (0.015s)
+  vs class 6: unsat  (0.015s)
+  vs class 7: unsat  (0.016s)
+  vs class 8: unsat  (0.015s)
+  vs class 9: unsat  (0.015s)
+
+digit=2  epsilon=0.05
+robust=True  total_time=0.55s
+  vs class 0: unsat  (0.027s)
+  vs class 1: unsat  (0.038s)
+  vs class 3: unsat  (0.037s)
+  vs class 4: unsat  (0.038s)
+  vs class 5: unsat  (0.038s)
+  vs class 6: unsat  (0.038s)
+  vs class 7: unsat  (0.039s)
+  vs class 8: unsat  (0.038s)
+  vs class 9: unsat  (0.039s)
+
