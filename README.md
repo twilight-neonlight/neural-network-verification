@@ -67,18 +67,18 @@ python3 -m venv ~/.venvs/nnv
 ~/.venvs/nnv/bin/pip install -r requirements.txt
 ```
 
-### 2. Build and register Marabou (WSL only)
+### 2. Build and install Marabou (WSL only)
 
 ```bash
-# Clone and build Marabou
 git clone https://github.com/NeuralNetworkVerification/Marabou.git ~/Marabou
 cd ~/Marabou
 mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release -DBUILD_PYTHON=ON
 make -j$(nproc)
 
-# Register maraboupy so it is importable from the project venv
-echo "$HOME/Marabou" > ~/.venvs/nnv/lib/python3.10/site-packages/marabou.pth
+# Install maraboupy into the venv
+cd ~/Marabou
+pip install -e .
 ```
 
 ---
@@ -100,13 +100,12 @@ Trains the MLP on 5 000 MNIST samples and saves `models/model.onnx` and `models/
 ### Run verification
 
 ```bash
-# WSL (Marabou required)
-wsl -d Ubuntu-22.04 -- bash -c \
-  "cd /mnt/c/Users/<user>/neural-network-verification && \
-   ~/.venvs/nnv/bin/python test.py 2>&1 1>/dev/null"
+# Inside WSL, from the project directory
+cd /mnt/c/path/to/neural-network-verification
+~/.venvs/nnv/bin/python test.py
 ```
 
-Redirecting stdout hides Marabou's internal engine log; results appear on stderr. They are also saved to `results/verification_results.txt`.
+Results are saved to `results/verification_results.txt`.
 
 ---
 
@@ -124,7 +123,7 @@ Each rival class is checked in a separate query because Marabou does not support
 
 ## Results
 
-Digits 0, 1, 2 verified at ε = 0.01 and ε = 0.05:
+Digits 0, 1, 2 verified at ε = 0.01 and ε = 0.05. Due to Marabou's runtime cost, only three representative digits were evaluated.
 
 | Digit | ε | Robust | SAT rival(s) | Total time |
 |---|---|---|---|---|
